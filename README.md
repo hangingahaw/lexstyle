@@ -117,7 +117,7 @@ Merge semantics:
 
 The canonical `StyleSheet`. One authoritative set of rules — no conflicting presets. Deeply frozen at runtime; attempting to mutate it will throw in strict mode.
 
-v0.1.0 ships the `dashes` category (7 rules). Additional categories will be added in future versions.
+v0.2.0 ships four categories: `dashes` (7 rules), `punctuation` (7 rules), `capitalization` (7 rules), and `citations` (7 rules). Additional categories will be added in future versions.
 
 ### `CATEGORY_ORDER`
 

@@ -77,9 +77,19 @@ describe('rules', () => {
     expect(rangeRule!.description).not.toContain('score')
   })
 
-  it('only dashes category is populated in v0.1.0', () => {
-    const nonDashKeys = CATEGORY_ORDER.filter((k) => k !== 'dashes')
-    for (const key of nonDashKeys) {
+  it('has punctuation, capitalization, and citations categories', () => {
+    expect(rules.punctuation).toBeDefined()
+    expect(rules.punctuation!.rules.length).toBeGreaterThan(0)
+    expect(rules.capitalization).toBeDefined()
+    expect(rules.capitalization!.rules.length).toBeGreaterThan(0)
+    expect(rules.citations).toBeDefined()
+    expect(rules.citations!.rules.length).toBeGreaterThan(0)
+  })
+
+  it('unpopulated categories remain undefined', () => {
+    const populated = ['dashes', 'punctuation', 'capitalization', 'citations'] as const
+    const unpopulated = CATEGORY_ORDER.filter((k) => !(populated as readonly string[]).includes(k))
+    for (const key of unpopulated) {
       expect(rules[key]).toBeUndefined()
     }
   })
