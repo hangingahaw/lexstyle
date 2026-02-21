@@ -158,7 +158,7 @@ type CategoryName = keyof StyleSheet
 
 ## Design decisions
 
-**Rules as data, not regex.** lexstyle produces plain text instructions for language models, not pattern-matching engines. Deterministic tools like [smartquotify](https://github.com/haihang-wang/smartquotify) don't need it — they use regex directly. LLM-based tools like [redashify](https://github.com/haihang-wang/redashify) do.
+**Rules as data, not regex.** lexstyle produces plain text instructions for language models, not pattern-matching engines. Deterministic tools like [smartquotify](https://github.com/hangingahaw/smartquotify) don't need it — they use regex directly. LLM-based tools like [redashify](https://github.com/hangingahaw/redashify) do.
 
 **One canonical set.** There are no Chicago/Bluebook/AP presets. The rules are the rules. If your local style differs, `merge()` handles that — but there's a single starting point, not a menu of competing conventions.
 

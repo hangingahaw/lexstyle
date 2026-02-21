@@ -45,11 +45,11 @@
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haihang-wang/lexstyle.git"
+    "url": "git+https://github.com/hangingahaw/lexstyle.git"
   },
-  "homepage": "https://github.com/haihang-wang/lexstyle#readme",
+  "homepage": "https://github.com/hangingahaw/lexstyle#readme",
   "bugs": {
-    "url": "https://github.com/haihang-wang/lexstyle/issues"
+    "url": "https://github.com/hangingahaw/lexstyle/issues"
   },
   "devDependencies": {
     "tsup": "^8.0.0",
