@@ -1,5 +1,8 @@
 # lexstyle
 
+[![npm](https://img.shields.io/npm/v/lexstyle)](https://www.npmjs.com/package/lexstyle)
+[![license](https://img.shields.io/npm/l/lexstyle)](https://github.com/hangingahaw/lexstyle/blob/main/LICENSE)
+
 Structured typography rules for LLM-based text correction.
 
 lexstyle defines editorial rules as typed data and serializes them into deterministic plain text that language models can follow. It ships one canonical rule set with layered overrides for local preferences.
